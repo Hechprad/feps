@@ -1,8 +1,20 @@
 button {
-  background-color: #82b440;
-  box-shadow: 0px 2px 0px #6f9a37;
-  color: whitesmoke;
-  border-radius: 4px;
+  background-color: #382039;
+  color: #5a3d5c;
+  width: auto; /*respeita o conteúdo*/
+  border-radius: 5px;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
   cursor: pointer; /*mickey*/
+  padding: 10px;
+  border: none;
+}
+button:hover {
+  background-color: #f638dc;
+  color: #382039;
+}
+button:focus {
+  outline: none;
 }
