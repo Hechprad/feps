@@ -1,10 +1,32 @@
 .logo {
-  
+  width: 200px;
+  display: flex;
+  align-content: center;
   height: 60px;
   /* border-right: 1px solid #f638dc; */
   padding: 0px 20px;
+  border-right: 1px solid #f638dc;
 }
-
 .logo img {
   height: 100%;
+}
+.logo span {
+  text-align: center;
+  padding-left: 20px;
+  font-size: 25px;
+  color: whitesmoke;
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    padding: 20px 0px 20px 0px;
+    border-right: none;
+    border-bottom: 1px solid #f638dc;
+  }
+  @media only screen and (max-width: 425px) {
+    .logo {
+      padding: 20px 0px 20px 0px;
+      border-right: none;
+      border-bottom: none;
+    }
+  }
 }

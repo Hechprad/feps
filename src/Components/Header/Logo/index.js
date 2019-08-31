@@ -7,6 +7,7 @@ const Logo = () => {
   return (
     <div className="logo">
       <img src={logoPng} alt="Logo Livraria Quixote" />
+      <span>Livraria X</span>
     </div>
   );
 };

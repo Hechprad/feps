@@ -17,3 +17,36 @@
   border-radius: 0px;
   color: #f638dc;
 }
+@media only screen and (max-width: 768px) {
+  .fixed-menu {
+    flex-direction: column;
+    position: static;
+    height: auto;
+    z-index: 0;
+  }
+  .fixed-menu > :nth-child(2) {
+    height: 60px;
+    padding: 20px 0px 20px 0px;
+  }
+  .fixed-menu button {
+    background-color: transparent;
+    border-radius: 30px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .fixed-menu {
+    text-align: center;
+  }
+  .fixed-menu > :nth-child(2) {
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    width: 100%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .fixed-menu button {
+    border-radius: 0px;
+    border-top: 1px solid #200f21;
+  }
+}
