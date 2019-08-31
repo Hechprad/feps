@@ -1,0 +1,16 @@
+.book-item {
+  height: 325px;
+  width: 225px;
+  margin: 20px 10px 0px 10px;
+  display: flex;
+  background-color: tomato;
+  border-radius: 4px;
+  border: 1px solid black;
+  position: relative;
+  flex-direction: column-reverse;
+}
+.book-item img {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}

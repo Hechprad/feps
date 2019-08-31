@@ -5,7 +5,8 @@
   align-items: center;
   width: 100%;
   height: 80px;
-  background-color: rgba(56, 32, 57, 0.8);
+  background-color: rgba(56, 32, 57, 0.9);
+  z-index: 1; /* em cima da galera toda*/
 }
 .fixed-menu :nth-child(2) {
   height: 100%;
@@ -14,4 +15,5 @@
   background-color: transparent;
   height: 100%;
   border-radius: 0px;
+  color: #f638dc;
 }

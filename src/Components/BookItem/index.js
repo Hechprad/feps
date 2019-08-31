@@ -1,10 +1,14 @@
 import React from 'react';
 import './bookItem.css';
 
-const BookItem = () => {
+import SubtitleDetail from './SubtitleDetail/index.js';
+/**props => { book } */
+const BookItem = ({ book }) => {
+  
   return (
-    <div>
-      
+    <div className="book-item">
+      <img src={book.image} alt={book.title}/>
+      <SubtitleDetail bookName={book.title} description={book.description}/>
     </div>
   );
 };
