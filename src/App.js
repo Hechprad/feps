@@ -11,7 +11,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/' component={Main} />
+        {/**exact */}
+        <Route path='/' exact component={Main} />
         <Route path='/book/new' component={BookNew} />
         <Route path='/book/:id' component={BookView} />
       </Switch>
