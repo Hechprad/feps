@@ -2,9 +2,8 @@ import React from 'react';
 import './main.css';
 
 import Header from '../Components/Header/index.js';
-import BookItem from '../Components/BookItem/';
+import GalleryContainer from '../Components/GalleryContainer/index.js';
 /**mock */
-import { books } from '../Mock/index.js';
 
 const Main = () => {
   return (
@@ -12,9 +11,7 @@ const Main = () => {
     <header>
       <Header />
     </header>
-    <div className="gallery-container">
-      {books.map(book => {return <BookItem book={book} key={book.id} />})}
-    </div>
+    <GalleryContainer />
   </>
   );
 };
