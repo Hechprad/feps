@@ -24,3 +24,5 @@ const books = [
   releaseYear: 2019
 }
 ];
+
+export { books };

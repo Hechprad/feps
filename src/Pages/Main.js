@@ -1,7 +1,7 @@
 import React from 'react';
 import './main.css';
 
-import FixedMenu from '../Components/Header/FixedMenu/index.js';
+import Header from '../Components/Header/index.js';
 import BookItem from '../Components/BookItem/';
 /**mock */
 import { books } from '../Mock/index.js';
@@ -10,10 +10,10 @@ const Main = () => {
   return (
   <>
     <header>
-      <FixedMenu />
+      <Header />
     </header>
     <div className="gallery-container">
-      {books.map(book => <BookItem movie={book} key={book.id}/>)}
+      {books.map(book => {return <BookItem book={book} key={book.id} />})}
     </div>
   </>
   );
