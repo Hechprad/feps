@@ -1,12 +1,17 @@
 import React from 'react';
 import './fixedMenu.css';
 import Button from '../../Button';
+import Logo from '../../Header/Logo/index.js';
 
 const FixedMenu = () => {
   return (
-    <div>
+    <div className="fixed-menu">
       <Logo />
-      <Button></Button>
+      <div>
+        <Button>home</Button>
+        <Button>adicionar livro</Button>
+        <Button>contato</Button>
+      </div>
     </div>
   );
 };

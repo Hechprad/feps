@@ -14,7 +14,6 @@ const Main = () => {
       <Header />
     </header>
     <div className="gallery-container">
-      <Button>testetetstt</Button>
       {books.map(book => {return <BookItem book={book} key={book.id} />})}
     </div>
   </>

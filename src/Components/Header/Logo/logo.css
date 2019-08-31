@@ -1,3 +1,10 @@
 .logo {
-  border-right: 1px solid #f638dc;
+  
+  height: 60px;
+  /* border-right: 1px solid #f638dc; */
+  padding: 0px 20px;
+}
+
+.logo img {
+  height: 100%;
 }
