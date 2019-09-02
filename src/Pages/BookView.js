@@ -1,8 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import Header from '../Components/Header/index.js';
+import Hero from '../Components/Header/Hero/index.js';
+import BookDetail from "../Components/BookDetail/index.js";
 
-const BookView = () => {
-  
+import { books } from '../Mock/index.js';
 
+const BookView = ({ match }) => {
+  const [book, setBook] = useState(null);
+  const [isEditing, setIsEditing] = useState(false);
+
+  const handleEdit = () => {
+    //edição
+  };
+
+  useEffect(() => {
+    const filtered = books.filter(
+      book => book.id === parseInt(match.params.id)
+    )[0];
+    setBook(filtered);
+    // getBookById(match.param.id).then(({data}) => {
+    //   setBook(data);
+    // }).catch((erro) => {
+    //   console.log(erro);
+    // });
+  }, [match.params.id]);
+  return (
+    <div>
+      <Header />
+      <Hero />
+      <BookDetail book={book} />
+    </div>
+  );
 };
 
 export default BookView;

@@ -7,7 +7,7 @@
   padding: 0px 20px;
   border-right: 1px solid #f638dc;
 }
-.logo img {
+.logo :nth-child(1) {
   height: 100%;
 }
 .logo span {

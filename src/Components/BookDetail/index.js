@@ -4,7 +4,7 @@ import './bookDetail.css';
 const BookDetail = () => {
   return (
     <div>
-
+      {/* <img src={book} alt="capa do livro" ></img> */}
     </div>
   );
 };

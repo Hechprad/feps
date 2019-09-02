@@ -14,6 +14,7 @@
   margin: 0px;
 }
 .subtitle-detail h6{
+  display: block; /*finalmente o ellipsis funcionou ;-;*/
   flex: 1;
   overflow: hidden;
   white-space: nowrap; /*estica o texto*/
