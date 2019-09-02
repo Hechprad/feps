@@ -45,8 +45,13 @@
     padding-bottom: 0px;
     padding-top: 0px;
   }
-  .fixed-menu button {
+  /*todos os filhos diretos do dória >*/
+  .fixed-menu .menu-buttons > :nth-child(n+1){ 
     border-radius: 0px;
     border-top: 1px solid #200f21;
+  }
+  .fixed-menu .menu-buttons a button {
+    width: 100%;
+    border-radius: 0px;
   }
 }

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Header from '../Components/Header/index.js';
-import Hero from '../Components/Header/Hero/index.js';
 import BookDetail from "../Components/BookDetail/index.js";
 
 import { books } from '../Mock/index.js';
 
 const BookView = ({ match }) => {
+  console.log(match)
   const [book, setBook] = useState(null);
   // const [isEditing, setIsEditing] = useState(false);
 
@@ -13,6 +13,7 @@ const BookView = ({ match }) => {
   //   //edição
   // };
 
+  // Similar ao componentDidMount e componentDidUpdate e componentWillUnmount
   useEffect(() => {
     const filtered = books.filter(
       book => book.id === parseInt(match.params.id)
@@ -27,7 +28,6 @@ const BookView = ({ match }) => {
   return (
     <div>
       <Header />
-      <Hero />
       <BookDetail book={book} />
     </div>
   );

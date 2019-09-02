@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './fixedMenu.css';
 import Button from '../../Button';
 import Logo from '../../Header/Logo/index.js';
@@ -7,10 +8,10 @@ const FixedMenu = () => {
   return (
     <div className="fixed-menu">
       <Logo />
-      <div>
-        <Button>home</Button>
-        <Button>adicionar livro</Button>
-        <Button>contato</Button>
+      <div className="menu-buttons">
+        <Link to="/"><Button>home</Button></Link>
+        <Link to="/"><Button>adicionar livro</Button></Link>
+        <Link to="/"><Button>contato</Button></Link>
       </div>
     </div>
   );
