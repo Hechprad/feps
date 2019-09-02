@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from '../Components/Header/index.js';
 import BookDetail from '../Components/BookDetail/index.js';
-import BookForm from '../Components/BookForm/index.js';
+import BookFormPut from '../Components/BookFormPut/index.js';
 
 // import { getBookById } from '../API/Books/index.js';
 import { books } from '../Mock/index.js';
@@ -15,7 +15,7 @@ const BookView = ({ match }) => {
 
   // função chamada ao clicar no botão editar na page do detalhe
   const handleEdit = () => {
-  //state da edição para BookForm
+  //state da edição para BookFormPut
   // isEditing = false / !isEditing = true
    setIsEditing(!isEditing)
   };
@@ -44,7 +44,7 @@ const BookView = ({ match }) => {
         // se for editar, manda o componente form
         // se não for editar, manda o detalhe
         isEditing ? 
-          <BookForm book={book} handleEdit={handleEdit}/> : 
+          <BookFormPut book={book} handleEdit={handleEdit}/> : 
           <BookDetail book={book} handleEdit={handleEdit}/>
       }
     </div>

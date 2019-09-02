@@ -1,30 +1,17 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
 import Header from '../Components/Header/index.js';
-import LabelInput from '../Components/LabelInput/index.js';
-import Button from '../Components/Button/index.js';
-
-// import './bookNew.css';
+import BookFormPost from '../Components/BookFormPost/index.js';
 
 const BookNew = (props) => {
   console.log(props)
+  
   return(
 
     <div>
       <Header/>
-      <div className="container-form">
-        <LabelInput label="Url da Imagem" type="file"></LabelInput>
-        <LabelInput label="Título" type="text" name="title" ></LabelInput>
-        <LabelInput label="Descrição" type="text" name="description"></LabelInput>
-        <LabelInput label="Autor" type="text" name="author"></LabelInput>
-        <LabelInput label="Ano de Lançamento" type="text" name="releaseYear"></LabelInput>
-        <div className="container-btn">
-          <Link to='/'><Button className="btn">Salvar</Button></Link>
-          <Link to='/'><Button className="btn">Voltar</Button></Link>
-        </div>
-      </div>
+      <BookFormPost />
     </div>
   );
 };

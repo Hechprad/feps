@@ -6,7 +6,7 @@ import LabelInput from '../LabelInput/index.js';
 import Button from '../Button/index.js';
 import { Link } from 'react-router-dom';
 
-import './bookForm.css';
+import './bookFormPut.css';
 
 const BookForm = ( {book, handleEdit, history } ) => {
   const [fields, setFields] = useState(book);

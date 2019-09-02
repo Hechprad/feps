@@ -1,14 +1,14 @@
-p {
+.container-contact p {
   text-align: center;
   font-size: 60px;
 }
 @media only screen and (max-width: 768px) {
-  p{
+  .container-contact p {
     font-size: 40px;
   }
 }
 @media only screen and (max-width: 425px) {
-  p{
+  .container-contact p {
     font-size: 20px;
   }
 }

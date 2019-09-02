@@ -6,7 +6,7 @@ import './contato.css';
 
 const Contato = () => {
   return (
-    <div>
+    <div className="container-contact">
       <Header />
       <p>E-mail: hecherat@gmail.com</p>
     </div>
