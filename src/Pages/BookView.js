@@ -7,11 +7,11 @@ import { books } from '../Mock/index.js';
 
 const BookView = ({ match }) => {
   const [book, setBook] = useState(null);
-  const [isEditing, setIsEditing] = useState(false);
+  // const [isEditing, setIsEditing] = useState(false);
 
-  const handleEdit = () => {
-    //edição
-  };
+  // const handleEdit = () => {
+  //   //edição
+  // };
 
   useEffect(() => {
     const filtered = books.filter(

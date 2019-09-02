@@ -6,7 +6,7 @@ import SubtitleDetail from "./SubtitleDetail/index.js";
 /**props => { book } */
 const BookItem = ({ book }) => {
   return (
-      <Link to="/book">
+      <Link to="/book/:id">
     <div className="book-item">
         <img src={book.image} alt={book.title} />
       {/* <link to="/book"> */}
