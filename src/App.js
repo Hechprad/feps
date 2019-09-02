@@ -3,9 +3,9 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 /**importando as páginas */
-import Main from './Pages/Main';
-import BookView from './Pages/BookView';
-import BookNew from './Pages/BookView';
+import Main from './Pages/Main.js';
+import BookView from './Pages/BookView.js';
+import BookNew from './Pages/BookNew.js';
 
 function App() {
   return (

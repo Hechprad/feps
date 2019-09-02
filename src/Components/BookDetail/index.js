@@ -1,5 +1,5 @@
 import React from 'react';
-//????????
+//ganha acesso ao history
 import { withRouter } from 'react-router-dom';
 
 import Button from '../Button/index.js';
@@ -25,7 +25,7 @@ const BookDetail = ({ book, handleEdit, history }) => {
         <p><b>Ano de Lançamento:</b> {book.releaseYear}</p>
         <div className="div-btn">
           {/* colocando true na função handEdit do BookView */}
-          <Button className="btn" onClick={handleEdit}>Editar</Button>
+          <Button className="btn" onClick={handleEdit} history={history}>Editar</Button>
           <Button className="btn" onClick={deleteBook}>Deletar</Button>
         </div>
       </div>
@@ -33,4 +33,4 @@ const BookDetail = ({ book, handleEdit, history }) => {
   ): <div className="not-found">Livro não encontrado</div>;
 };
 
-export default BookDetail;
+export default withRouter(BookDetail);

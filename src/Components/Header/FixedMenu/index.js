@@ -10,7 +10,7 @@ const FixedMenu = () => {
       <Logo />
       <div className="menu-buttons">
         <Link to="/"><Button>home</Button></Link>
-        <Link to="/"><Button>adicionar livro</Button></Link>
+        <Link to="/book/new"><Button>adicionar livro</Button></Link>
         <Link to="/"><Button>contato</Button></Link>
       </div>
     </div>
