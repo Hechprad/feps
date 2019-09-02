@@ -10,7 +10,7 @@ import './bookDetail.css';
 const BookDetail = ({ book, handleEdit, history }) => {
 
   //
-  const deleteFilm = () => {
+  const deleteBook = () => {
     alert('Livro excluído com sucesso')
     history.push('/')
   }
@@ -26,7 +26,7 @@ const BookDetail = ({ book, handleEdit, history }) => {
         <div className="div-btn">
           {/* colocando true na função handEdit do BookView */}
           <Button className="btn" onClick={handleEdit}>Editar</Button>
-          <Button className="btn">Deletar</Button>
+          <Button className="btn" onClick={deleteBook}>Deletar</Button>
         </div>
       </div>
     </div>

@@ -44,7 +44,7 @@ const BookView = ({ match }) => {
         // se for editar, manda o componente form
         // se não for editar, manda o detalhe
         isEditing ? 
-          <BookForm book={book}/> : 
+          <BookForm book={book} handleEdit={handleEdit}/> : 
           <BookDetail book={book} handleEdit={handleEdit}/>
       }
     </div>

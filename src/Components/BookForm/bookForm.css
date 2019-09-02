@@ -1,0 +1,17 @@
+.container-form {
+  display: flex;
+  flex-direction: column;
+}
+.container-form :nth-child(-n+4){
+  justify-content: center;
+}
+.container-btn {
+  display: flex;
+  justify-content: space-around;
+}
+.container-btn *{
+  width: 40%
+}
+.container-btn a :nth-child(1) {
+  width: 100%;
+}

@@ -1,0 +1,13 @@
+.div-label {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 10px 0px 10px 0px;
+}
+.div-label label {
+  width: 160px;
+}
+.input-text {
+  width: 40%;
+  border-radius: 5px;
+}
