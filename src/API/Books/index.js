@@ -1,6 +1,7 @@
-import API from '../Books.js';
+import API from '..';
 
-const getBooks = () => API.get('petfind/')
-const getBookById = (id = '') => API.get(`petfind/${id}`)
+// template literals e métodos http
+const getBooks = () => API.get('petfind/');
+const getBookById = (id = '') => API.get(`petfind/${id}`);
 
-export { getBooks, getBookById }
+export { getBooks, getBookById };

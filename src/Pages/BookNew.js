@@ -4,11 +4,8 @@ import { withRouter } from 'react-router-dom';
 import Header from '../Components/Header/index.js';
 import BookFormPost from '../Components/BookFormPost/index.js';
 
-const BookNew = (props) => {
-  console.log(props)
-  
+const BookNew = () => {
   return(
-
     <div>
       <Header/>
       <BookFormPost />

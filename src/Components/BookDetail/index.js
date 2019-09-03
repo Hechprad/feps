@@ -8,9 +8,9 @@ import './bookDetail.css';
 
 // book, handleEdit e history vem do props
 const BookDetail = ({ book, handleEdit, history }) => {
-
-  //
   const deleteBook = () => {
+    
+    //primeiro a unidade = bookId, segundo é a posição
     alert('Livro excluído com sucesso')
     history.push('/')
   }
