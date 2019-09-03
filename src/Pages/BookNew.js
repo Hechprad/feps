@@ -30,6 +30,7 @@ export default withRouter(BookNew);
   /* *****
   como redirecionar o cliente para a página de detalhe do 
   livro editado??
+  withRouter
   ***** */
 
   // // aqui haverá uma validação dos campos se necessário   

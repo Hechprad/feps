@@ -1,7 +1,7 @@
 import React from 'react'
 import './labelInput.css'
 
-// recebe a propriedade label e o resto do props(herdade)
+// recebe a propriedade label e o resto do props
 const LabelInput = ({ label, ...props}) => {
   return (
     <div className="div-label">
